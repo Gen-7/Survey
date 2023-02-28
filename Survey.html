@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+
+<body>
+  <h1 id="title">Gaming Survey</h1>
+  <p id="description" class="description">Thank you for taking the time to fill out this survey</p>
+  
+  <form id="survey-form" method="post" action="freeCodeCamp-surveyapp.org">
+
+    <fieldset> <!-- Name to role -->
+      <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder=" Enter your name" required></label>
+
+      <label for="email" id="email-label">Email<input id="email" name="email" type="email" placeholder=" Enter your email" required></label>
+
+      <label for="age" id="number-label">Age (optional)<input id="number" name="number" type="number" min="12" max="120" placeholder=" Enter your age"></label>
+
+      <label for="genre">What is your favorite genre?
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Action</option>
+          <option value="2">Adventure</option>
+          <option value="3">MMO</option>
+          <option value="4">RPG</option>
+          <option value="5">Horror</option>
+          <option value="6">Other</option>
+        </select>
+      </label>
+      <br>
+
+<!-- Radio buttons -->
+     <p id="class="time">How often do you play games?</p>
+     <label for="often"><input class="inline" id="frequency" type="radio" name="frequency" value="often">Often</label>
+     <label for="sometimes"><input class="inline" id="frequency" type="radio" name="frequency" value="sometimes">Sometimes</label>
+     <label for="rarely"><input class="inline" id="frequency" type="radio" name="frequency" value="rarely">Rarely</label>
+     <br>
+
+<!-- Check boxes -->
+<p>Which systems do you play on?</p>
+<label><input class="inline" id="pc" type="checkbox" name="pc" value="pc">PC</label>
+<label><input class="inline" id="playstation" type="checkbox" name="playstation" value="playstation">Playstation</label>
+<label><input class="inline" id="xbox" type="checkbox" name="xbox" value="xbox">XBox</label>
+<label><input class="inline" id="nintendo" type="checkbox" name="nintendo" value="nintendo">Nintendo Switch</label>
+<label><input class="inline" id="system-other" type="checkbox" name="system-other" value="system-other">Other</label>
+<br>
+
+<label for="favorite">What's your favorite game?</label>
+<textarea id="favorite" name="favorite" rows="5" cols="50" placeholder=" Tell us your favorite game. Feel free to add why."></textarea>
+<br>
+<br>
+
+
+<input id="submit" type="submit" value="Submit">
+    </fieldset>
+  </form>
+</body>
+</html>
